@@ -1,18 +1,19 @@
-# Layout feito com Angular 4
+# Layout example with Angular
+
 Requisitos:
 
-NodeJS 7.x com NPM instalado.
+NodeJS com NPM instalado.
 
-Para baixar as dependências, acesse a pasta do projeto e execute:
+Para baixar as dependências, executar o comando abaixo dentro sa pasta do projeto:
 
 ```sh
 npm install
 ```
 
-Para build, executar o comando.
+Para build, executar o comando:
 
 ```sh
 ng build --prod
 ```
 
-Os arquivos serão copiados para a pasta dist na raiz.
+Os arquivos serão copiados para a pasta `dist` que será criada na raiz do projeto.
