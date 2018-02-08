@@ -1,0 +1,302 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Layout
+   ========================================================================== */
+
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* Layout
+   ========================================================================== */
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	background: #ecf0f1;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #2c3e50;
+	padding-bottom: 100px;
+}
+
+header {
+	background: #fff;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e8eae9;
+}
+
+#navbar {
+	border-bottom: 1px solid #dbddde;
+	padding: 20px 30px 17px;
+}
+
+#navbar .notifications {
+	float: right;
+}
+
+#navbar .notifications li {
+	float: left;
+	margin-right: 35px;
+	padding-top: 6px;
+}
+
+#navbar .notifications img {
+	height: 24px;
+}
+
+#navbar .profile {
+	color: #acacac;
+	float: right;
+}
+
+#navbar .profile-image {
+	height: 40px;
+	margin-right: 10px;
+}
+
+#navbar .profile-name {
+	vertical-align: top;
+	padding-top: 14px;
+    float: right;
+    font-size: 14px;
+}
+
+#navbar .profile-arrow {
+	width: 15px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+#page-info {
+	clear: both;
+}
+
+.artist-info img {
+	float: left;
+	height: 100px;
+	margin-right: 20px;
+}
+
+.artist-name {
+	float: left;
+	font-weight: normal;
+	margin-top: 30px;
+	font-size: 26px;
+}
+
+#main-menu li {
+	padding: 20px 25px;
+}
+
+#main-menu li.active {
+	border-left: 8px solid #2ccc74;
+}
+
+#main {
+	padding: 20px 0;
+}
+
+.artist-info {
+	padding: 20px 32px;
+}
+
+.album {
+	background: #fff;
+	border: 1px solid #dee1e2;
+	padding: 58px 30px;
+	border-radius: 4px;
+	margin-bottom: 60px;
+}
+
+.album-picture {
+	margin: 0 auto;
+    width: 100px;
+}
+
+.album-content {
+	margin-top: 60px;
+}
+
+.album-year {
+	color: #b1b1b1;
+	letter-spacing: 1px;
+}
+
+.album-title {
+	color: #4a90e2;
+	font-size: 2em;
+	margin-top: 0;
+	letter-spacing: 2px;
+}
+
+.album-songs {
+	padding: 0;
+}
+
+.album-songs > li {
+	list-style: none;
+	padding: 27px 0;
+	border-bottom: 2px solid #dee1e2;
+}
+
+/* General
+=========================== */
+
+.navigation {
+	margin-top: 18px;
+	text-align: center;
+}
+
+.arrow {
+	width: 60px;
+	border: 2px solid #e4e4e4;
+	border-radius: 3px;
+	background: #fff;
+    text-align: center;
+    display: inline-block;
+    padding: 25px;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.hidden-sm {
+		display: none;
+	}
+
+	#main > .album:nth-child(2) {
+		display: none;
+	}
+
+}
+
+@media only screen  and (min-width: 768px) {
+
+	.hidden-lg {
+		display: none;
+	}
+
+	#main-menu {
+		max-width: 1024px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		padding: 0 20px;
+	}
+
+	#main-menu li {
+		float: left;
+		padding-bottom: 6px;
+		font-size: 14px;
+		margin-right: 20px;
+	}
+
+	#main-menu li.active {
+		border-left: none;
+		border-bottom: 5px solid #2ccc74
+	}
+
+	.song-duration {
+		float: right;
+		color: #bcbdbf;
+	}
+
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+	body {
+		padding: 0;
+	}
+
+	#main {
+		max-width: 1024px;
+		margin: 0 auto;
+		padding: 60px 0;
+	}
+
+	#navbar .notifications {
+		float: right;
+		margin-right: 50px;
+	}
+
+	#navbar .profile-name {
+		display: block;
+	}
+
+	.artist-info {
+		box-sizing: border-box;;
+		max-width: 1024px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	.artist-info img {
+		height: 100px;
+		margin-right: 20px;
+	}
+
+	.artist-name {
+		float: left;
+		font-weight: normal;
+		margin-top: 30px;
+		font-size: 26px;
+	}
+
+	.album {
+		padding: 30px 0;
+	}
+
+	.album-picture {
+	    float: left;
+	    border-right: 1px solid #e0e0e0;
+	    min-height: 500px;
+	    padding: 0 40px;
+    	width: 120px;	}
+
+	.album-picture img {
+		width: 120px;
+	}
+
+	.album-title {
+		border-bottom: 2px solid #e0e0e0;
+		font-size: 1.7em;
+		padding-bottom: 22px;
+	}
+
+	.album-content {
+		width: 700px;
+		float: left;
+		margin-top: 0;
+		padding: 0 15px 0 40px;
+	}
+
+	.album-year {
+		font-size: 15px;
+	}
+
+	.album-songs {
+		padding: 0 20px;
+		font-size: 14px;
+	}
+
+	.album-songs > li {
+		padding: 22px 0;
+		border-bottom: 1px solid #dee1e2;
+	}
+
+	.navigation {
+		display: none;
+	}
+
+
+}

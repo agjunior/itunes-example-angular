@@ -1,0 +1,67 @@
+<header>
+	<!-- Navbar -->
+	<section id="navbar">
+		<div class="profile">
+			<img class="profile-image" src="assets/profile-example.png">
+			<span class="profile-name hidden-sm">Hoang Nguyen</span>
+			<a href="#"><img class="hidden-lg profile-arrow" src="assets/arrow-down.png"></a>			
+		</div>
+		<ul class="notifications">
+			<li><a href="#" class="hidden-sm"><img src="assets/icon-person.png"></a></li>
+			<li><a href="#" class="hidden-sm"><img src="assets/icon-messages.png"></a></li>
+			<li><a href="#"><img src="assets/icon-notifications.png"></a></li>
+		</ul>
+		<div class="clearfix"></div>
+	</section>
+
+	<!-- Header info -->
+	<section id="page-info">
+		<div class="artist-info">
+			<img src="assets/artworkArtist.png">
+			<h1 class="artist-name">SIA</h1>
+			<div class="clearfix"></div>
+		</div>
+		<nav id="main-menu">
+			<ul>
+				<li href="#" class="active">Álbuns</li>
+				<li href="#" class="hidden-sm">Artistas</li>
+				<li href="#" class="hidden-sm">Playlists</li>
+				<div class="clearfix"></div>
+			</ul>
+		</nav>
+	</section>
+</header>
+
+<section id="main">
+
+	<!-- Album box -->
+	<div class="album" *ngFor="let album of albums">
+
+		<div class="album-picture">
+			<img src="{{ album[0].artworkUrl100 }}">
+		</div>
+		<div class="album-content">
+			<span class="album-year">{{ album[0].releaseDate | date:'yyyy' }}</span>
+			<h2 class="album-title">{{ album[0].collectionName }}</h2>
+
+			<ul class="album-songs">
+				<li *ngFor="let song of album | slice:1">
+				     {{ song.trackName }}
+				     <span class="song-duration hidden-sm">{{ song.trackTimeMillis | date:'mm:ss' }}</span>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+
+	</div>
+
+	<!-- NAvigation on mobile -->
+	<div class="navigation">
+		<div class="arrow">
+			<img src="assets/arrow-left.png">
+		</div>
+		<div class="arrow">
+			<img src="assets/arrow-right.png">
+		</div>
+	</div>
+</section>
